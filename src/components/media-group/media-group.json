@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_media_group_media_groups",
+  "info": {
+    "displayName": "media_group",
+    "icon": "landscape",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image_with_link": {
+      "displayName": "image_with_link",
+      "type": "component",
+      "repeatable": true,
+      "component": "media-group.image-with-link"
+    },
+    "name": {
+      "type": "string",
+      "unique": true
+    },
+    "order": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "text"
+    },
+    "fetch_from": {
+      "type": "json"
+    },
+    "is_fetched_from_api": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

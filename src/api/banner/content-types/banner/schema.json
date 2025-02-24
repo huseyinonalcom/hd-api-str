@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "banners",
+  "info": {
+    "singularName": "banner",
+    "pluralName": "banners",
+    "displayName": "banner"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "localized_description": {
+      "type": "json"
+    },
+    "localized_title": {
+      "type": "json"
+    },
+    "images": {
+      "type": "component",
+      "repeatable": true,
+      "component": "media-group.image-with-link"
+    }
+  }
+}

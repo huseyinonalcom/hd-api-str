@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "store_locations",
+  "info": {
+    "singularName": "store-location",
+    "pluralName": "store-locations",
+    "displayName": "StoreLocation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "localized_content": {
+      "type": "json"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "site_banners",
+  "info": {
+    "singularName": "site-banner",
+    "pluralName": "site-banners",
+    "displayName": "SiteBanner"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "banners": {
+      "displayName": "banner",
+      "type": "component",
+      "repeatable": true,
+      "component": "banner.banner"
+    }
+  }
+}

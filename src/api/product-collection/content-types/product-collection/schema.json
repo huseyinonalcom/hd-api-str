@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_collections",
+  "info": {
+    "singularName": "product-collection",
+    "pluralName": "product-collections",
+    "displayName": "ProductCollection",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "mappedBy": "product_collections"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "tags": {
+      "type": "text"
+    },
+    "bgColor": {
+      "type": "string"
+    },
+    "right": {
+      "type": "boolean",
+      "default": false
+    },
+    "textColor": {
+      "type": "string"
+    },
+    "localized_name": {
+      "type": "json"
+    },
+    "localized_description": {
+      "type": "json"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_extras",
+  "info": {
+    "singularName": "product-extra",
+    "pluralName": "product-extras",
+    "displayName": "ProductExtra",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "barcode": {
+      "type": "string"
+    },
+    "weight": {
+      "type": "decimal",
+      "default": 0
+    },
+    "per_box": {
+      "type": "integer",
+      "default": 1
+    },
+    "product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product",
+      "inversedBy": "product_extra"
+    },
+    "packaged_weight": {
+      "type": "decimal",
+      "default": 0
+    },
+    "packaged_dimensions": {
+      "type": "string"
+    },
+    "seat_height": {
+      "type": "decimal",
+      "default": 0
+    },
+    "diameter": {
+      "type": "decimal",
+      "default": 0
+    },
+    "packaged_weight_net": {
+      "type": "decimal",
+      "default": 0
+    },
+    "tags": {
+      "type": "text"
+    },
+    "armrest_height": {
+      "type": "decimal",
+      "required": false,
+      "default": 0
+    },
+    "new": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "parkings",
+  "info": {
+    "singularName": "parking",
+    "pluralName": "parkings",
+    "displayName": "Parking"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "localized_content": {
+      "type": "json"
+    }
+  }
+}

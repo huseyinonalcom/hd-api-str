@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "references",
+  "info": {
+    "singularName": "reference",
+    "pluralName": "references",
+    "displayName": "Reference"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "localized_content": {
+      "type": "json"
+    },
+    "title": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

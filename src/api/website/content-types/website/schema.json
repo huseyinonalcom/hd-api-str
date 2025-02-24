@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "websites",
+  "info": {
+    "singularName": "website",
+    "pluralName": "websites",
+    "displayName": "Website",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "media_groups": {
+      "displayName": "media_group",
+      "type": "component",
+      "repeatable": true,
+      "component": "media-group.media-group"
+    }
+  }
+}

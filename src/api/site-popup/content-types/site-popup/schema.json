@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "site_popups",
+  "info": {
+    "singularName": "site-popup",
+    "pluralName": "site-popups",
+    "displayName": "SitePopup",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "url": {
+      "type": "text"
+    },
+    "img": {
+      "type": "text"
+    }
+  }
+}

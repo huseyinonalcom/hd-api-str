@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "tests",
+  "info": {
+    "singularName": "test",
+    "pluralName": "tests",
+    "displayName": "test"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "media_groups": {
+      "type": "component",
+      "repeatable": true,
+      "component": "media-group.media-group"
+    }
+  }
+}

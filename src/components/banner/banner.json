@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_banner_banners",
+  "info": {
+    "displayName": "banner",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "json"
+    },
+    "url": {
+      "type": "text"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}
