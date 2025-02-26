@@ -1,49 +1,49 @@
-import type { Schema, Attribute } from '@strapi/strapi';
+import type { Attribute, Schema } from '@strapi/strapi';
 
 export interface BannerBanner extends Schema.Component {
   collectionName: 'components_banner_banners';
   info: {
-    displayName: 'banner';
     description: '';
+    displayName: 'banner';
   };
   attributes: {
     content: Attribute.JSON;
-    url: Attribute.Text;
     order: Attribute.Integer;
+    url: Attribute.Text;
   };
 }
 
 export interface MediaGroupImageWithLink extends Schema.Component {
   collectionName: 'components_media_group_image_with_links';
   info: {
+    description: '';
     displayName: 'image_with_link';
     icon: 'landscape';
-    description: '';
   };
   attributes: {
-    image: Attribute.Media;
-    linked_url: Attribute.Text;
-    order: Attribute.Integer;
-    name: Attribute.String;
     description: Attribute.Text;
+    image: Attribute.Media<'images'>;
+    linked_url: Attribute.Text;
     locale: Attribute.String;
+    name: Attribute.String;
+    order: Attribute.Integer;
   };
 }
 
 export interface MediaGroupMediaGroup extends Schema.Component {
   collectionName: 'components_media_group_media_groups';
   info: {
+    description: '';
     displayName: 'media_group';
     icon: 'landscape';
-    description: '';
   };
   attributes: {
-    image_with_link: Attribute.Component<'media-group.image-with-link', true>;
-    name: Attribute.String & Attribute.Unique;
-    order: Attribute.Integer;
     description: Attribute.Text;
     fetch_from: Attribute.JSON;
+    image_with_link: Attribute.Component<'media-group.image-with-link', true>;
     is_fetched_from_api: Attribute.Boolean & Attribute.DefaultTo<false>;
+    name: Attribute.String & Attribute.Unique;
+    order: Attribute.Integer;
   };
 }
 
@@ -54,8 +54,8 @@ export interface ReservationsReservations extends Schema.Component {
     icon: 'file';
   };
   attributes: {
-    client_name: Attribute.String;
     amount: Attribute.Integer & Attribute.DefaultTo<1>;
+    client_name: Attribute.String;
     is_deleted: Attribute.Boolean & Attribute.DefaultTo<false>;
   };
 }
